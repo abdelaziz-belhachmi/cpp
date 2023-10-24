@@ -29,7 +29,60 @@ int MM = X / pow(10,8);
     int NN = X;
 
     cout<<JJ<<MM<<AAAA<<HH<<NN<<endl;
+    switch (MM) {
+        case 1:
+            cout<<JJ<<" janvier "<<AAAA<<" à "<<HH<<"h"<<NN<<endl;
 
+            break;
+        case 2:
+            cout<<JJ<<" fevrier "<<AAAA<<" à "<<HH<<"h"<<NN<<endl;
+
+            break;
+        case 3:
+            cout<<JJ<<" mars "<<AAAA<<" à "<<HH<<"h"<<NN<<endl;
+
+            break;
+        case 4:
+            cout<<JJ<<" avril "<<AAAA<<" à "<<HH<<"h"<<NN<<endl;
+
+            break;
+        case 5:
+            cout<<JJ<<" mai "<<AAAA<<" à "<<HH<<"h"<<NN<<endl;
+
+            break;
+        case 6:
+            cout<<JJ<<" juin "<<AAAA<<" à "<<HH<<"h"<<NN<<endl;
+
+            break;
+        case 7:
+            cout<<JJ<<" juin "<<AAAA<<" à "<<HH<<"h"<<NN<<endl;
+
+            break;
+        case 8:
+            cout<<JJ<<" août "<<AAAA<<" à "<<HH<<"h"<<NN<<endl;
+
+            break;
+        case 9:
+            cout<<JJ<<" septembre "<<AAAA<<" à "<<HH<<"h"<<NN<<endl;
+
+            break;
+        case 10:
+            cout<<JJ<<" octobre "<<AAAA<<" à "<<HH<<"h"<<NN<<endl;
+
+            break;
+        case 11:
+            cout<<JJ<<" novembre  "<<AAAA<<" à "<<HH<<"h"<<NN<<endl;
+
+            break;
+        case 12:
+            cout<<JJ<<" décembre  "<<AAAA<<" à "<<HH<<"h"<<NN<<endl;
+
+            break;
+        default:
+cout<<"invalid month entred!!\n";
+            break;
+
+    }
 
     return 0;
 }
