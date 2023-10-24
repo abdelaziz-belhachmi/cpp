@@ -11,6 +11,8 @@ public:
 
     complexe(float reel , float imaginary):reel(reel), imaginary(imaginary){}
 
+    ~complexe();
+
     int get_reel(){
         return this->reel;
     }
