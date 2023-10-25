@@ -17,7 +17,6 @@ int tmp;
     {
         for (int j=0 ; j < 10-i-1; j++)
         {
-            /* Pour un ordre décroissant utiliser < */
             if (t[j] > t[j+1])
             {
                 tmp = t[j];
