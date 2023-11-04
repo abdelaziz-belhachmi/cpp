@@ -32,25 +32,37 @@ std::list<int> bull(std::list<int> &L){
 //
 std::list<int> insertion(std::list<int> &L) {
     std::list<int> sorted_list;
-    std::list<int>::iterator it;
-/**
- *
- * to do tomorrow
- *
- */
 
+    for (const int &value : L) {
+        std::list<int>::iterator it = sorted_list.begin();
+
+        while (it != sorted_list.end() && *it < value) {
+            ++it;
+        }
+
+        sorted_list.insert(it, value);
+    }
     return sorted_list;
 }
 
 std::list<int> selection(std::list<int> &L){
     std::list<int> sorted_list;
-    std::list<int>::iterator it;
 
-/**
- *
- * to do tomorrow
- *
- */
+    while (!L.empty()) {
+        std::list<int>::iterator min_it = L.begin();
+        std::list<int>::iterator it = L.begin();
+
+        while (it != L.end()) {
+            if (*it < *min_it) {
+                min_it = it;
+            }
+            ++it;
+        }
+
+        sorted_list.push_back(*min_it);
+        L.erase(min_it);
+    }
+
     return sorted_list;
 }
 
