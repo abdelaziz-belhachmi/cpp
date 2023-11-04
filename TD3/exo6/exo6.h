@@ -1,6 +1,3 @@
-//
-// Created by unknow on 11/4/2023.
-//
 
 #ifndef WORKSPACE_EXO6_H
 #define WORKSPACE_EXO6_H

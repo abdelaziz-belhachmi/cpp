@@ -1,6 +1,4 @@
-//
-// Created by abdelaziz belhachmi on 11/4/2023.
-//
+
 #include <iostream>
 #include "exo6.h"
 
